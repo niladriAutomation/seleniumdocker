@@ -27,6 +27,8 @@ public class chromeStandaloneTestDocker {
 		driver.findElementById("btnLogin").click();
 		WebElement admin =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[contains(text(),'Admin')]")));
 		admin.click();
+		WebElement pim =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[contains(text(),'PIM')]")));
+		pim.click();
 		driver.findElementById("welcome").click();
 		WebElement logout =wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Logout")));
 		logout.click();
